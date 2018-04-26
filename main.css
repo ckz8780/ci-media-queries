@@ -1,0 +1,24 @@
+.box {
+    width: 200px;
+    height:; 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .mobile {
+        background-color: #0997D3;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tablet {
+        background-color: #bada55;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1800px) {
+    .desktop {
+        background-color: #000;
+    }
+}
