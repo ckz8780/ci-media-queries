@@ -1,13 +1,31 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.sizealert {
+    display: none;
+    margin-top: 20px;
+}
+
 .box {
     width: 200px;
     height: 200px;
     border: 1px solid black;
     display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 @media (max-width: 767px) {
     .mobile {
-        background-color: #0997D3;
+        background-color: #0997d3;
+    }
+    #mobile-sizealert {
+        display: block;
     }
 }
 
@@ -15,10 +33,25 @@
     .tablet {
         background-color: #bada55;
     }
+    #tablet-sizealert {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1800px) {
     .desktop {
         background-color: #000;
+    }
+    #desktop-sizealert {
+        display: block;
+    }
+}
+
+@media (min-width: 1801px) {
+    .big-desktop {
+        background-color: #9452d6;
+    }
+    #big-desktop-sizealert {
+        display: block;
     }
 }
